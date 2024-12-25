@@ -1,0 +1,17 @@
+:root{
+  color-scheme: none;
+}
+.total-page{
+  display: flex;
+  width:100vw;
+}
+body{
+  display: flex;
+  overflow-x: hidden;
+}
+@media (max-width:1240px) {
+  .total-page{
+    display: flex;
+    flex-direction: column;
+  }
+}
