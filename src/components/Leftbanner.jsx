@@ -10,8 +10,14 @@ import phone from '../assets/phone.svg'
 import Hamburger from 'hamburger-react'
 import { useEffect, useState } from "react";
 import { AppContext, useGlobalContext } from '../context'
+import { NavLink } from 'react-router-dom'
 
 const Leftbanner=()=>{
+    let username="UtkarshDhairyaPanwar";
+    let newname=username;
+    if(username.length>12){
+       username.substring(0,12)+"...";
+    }
     const [isOpen,setOpen]=useState(false);
     const [name,setname]=useState('on');
     const {index,setindex}=useGlobalContext();
@@ -48,7 +54,7 @@ return(
             <div className={"name-pannel "+name}>
             <form>
               <select name="name" id="name">
-                <option value="UtkarshDhairyaPanwar">UtkarshDhairyaPanwar</option>
+                <option value={username}>{newname}</option>
                 <option value="guest">GUEST</option>
                </select>
             </form>
@@ -65,7 +71,7 @@ return(
             <div className={"lb-lower "+name}>
                 <div className="lc">
                 <div className="contact not-sel v1"><img src={phone}></img>Support</div>
-                <div className="logout not-sel v1"><img src={login}></img>Logout</div>
+                <NavLink to="/signin"><div className="logout not-sel v1"><img src={login}></img>Logout/Signin</div></NavLink>
                 </div>
             
             </div>

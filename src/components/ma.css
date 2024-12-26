@@ -11,6 +11,9 @@
     gap:0;
     flex-direction: column;
   }
+  .title2{
+    font-weight: 500;
+   }
   .total{
     border:1px #D5D7DA solid;
     border-radius: 10px;
@@ -61,9 +64,10 @@
     background-color: blue;
     color: white;
   }
-  .search-inpur{
+  .search-input{
     background-color: white;
     color-scheme: none;
+    min-width:15vw;
   }
   .search-input {
     border: 1px solid #D5D7DA;
@@ -160,5 +164,28 @@
     .off{
       display: none;
     }
+    .b1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding-left: 5px;
+     padding-right: 5px;
+     font-size: x-small;
+    }
+    .b2 {
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: x-small;
+     }
+     .plus{
+      font-size: x-small;
+     }
+     .tit{
+      font-size: medium;
+     }
+     .info{
+      font-size: x-small;
+     }
+     
   }
   

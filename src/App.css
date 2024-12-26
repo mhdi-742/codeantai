@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 :root{
   color-scheme: none;
 }
 .total-page{
   display: flex;
   width:100vw;
+}
+.total-page {
+    font-family: "Inter";
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 body{
   display: flex;
@@ -14,4 +20,8 @@ body{
     display: flex;
     flex-direction: column;
   }
+}
+.logout{
+  text-decoration: none;
+  color: black;
 }
